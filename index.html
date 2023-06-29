@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cereza.png" type="image/x-icon">
+    <title>hipopotamos</title>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Los hipopotamos</h1>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="preferencias.html">preferencias</a></li>
+                <li><a href="audiovisuales.html">audiovisuales</a></li>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="margin: 15px;">los hipopotamos, ¿amenaza boliviana?</h2>
+    <hr>
+    <article class="container">
+        <h3>la vida de ellos</h3>
+        <img class="image" src="data:image/jpeg;base64,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"
+            alt="primer hipopotamo">
+        <p><b>Los hipopótamos</b> son mamíferos semiacuáticos que pertenecen a la familia Hippopotamidae.
+            Son animales grandes y robustos que se encuentran principalmente en África, en hábitats
+            acuáticos como ríos, lagos y estanques. A continuación, describiré algunos aspectos de la
+            vida de los hipopótamos:</p>
+        <img class="image2" src="https://concepto.de/wp-content/uploads/2021/07/hipopotamo-e1626653661481.jpg"
+            alt="segundo hipopotamo">
+        <p> Hábitat: Los hipopótamos habitan en diversas áreas de África, desde el norte del continente hasta el sur del
+            Sahara.
+            Prefieren aguas poco profundas con lodo y vegetación abundante, donde pueden sumergirse para mantenerse
+            frescos
+            y proteger su piel del sol.
+            <br>
+            Apariencia física: Los hipopótamos son animales grandes y pesados, con cuerpos voluminosos
+            y patas cortas y robustas. Tienen una piel gruesa y sin pelo, que es de color gris oscuro o
+            marrón, y se seca fácilmente, lo que los lleva a permanecer en el agua durante la mayor parte del
+            día.
+        </p>
+        <img class="image" src="https://img2.rtve.es/i/?w=1600&i=1311939318551.jpg" alt="tercer hipopotamo">
+        <p> Alimentación: Los hipopótamos son herbívoros y se alimentan principalmente de hierba. Salen del agua durante
+            la noche para pastar en las praderas cercanas, donde pueden consumir grandes cantidades de pasto para
+            satisfacer sus necesidades alimenticias. Su mandíbula es poderosa y tienen dientes afilados, lo que les permite morder
+            y triturar la vegetación.
+            <br>
+            Comportamiento: Los hipopótamos son animales sociales y generalmente viven en grupos que varían en tamaño,
+            desde unas pocas decenas hasta más de 100 individuos. Estos grupos están liderados por un macho dominante,
+            que defiende su territorio y a las hembras que lo componen. Los hipopótamos son conocidos por ser agresivos
+            y pueden ser peligrosos si se sienten amenazados, especialmente cuando se trata de proteger a sus crías.
+        </p>
+        <img class="image2" src="https://fotografias.antena3.com/clipping/cmsimages01/2022/02/14/15BB68E7-FF21-4F44-AE7F-7627B74D2170/que-comen-hipopotamos-otras-diez-curiosidades-estos-animales_97.jpg?crop=1254,705,x0,y66&width=1600&height=900&optimize=low&format=webply" alt="">
+        <p> Reproducción: La reproducción de los hipopótamos generalmente ocurre en el agua. Después de un período de 
+            gestación de alrededor de 8 meses, la hembra da a luz a una cría. La madre y su cría forman un vínculo fuerte, 
+            y el resto del grupo también participa en su cuidado y protección. Las crías son bastante grandes al nacer, pesando 
+            alrededor de 25 a 50 kg.
+            <br>
+            Depredadores: Los hipopótamos adultos tienen pocos depredadores naturales debido a su tamaño y agresividad. 
+            Sin embargo, los jóvenes y las crías son más vulnerables y pueden ser atacados por cocodrilos y grandes felinos 
+            como los leones. Los hipopótamos adultos pueden proteger a los más jóvenes mediante comportamientos defensivos y 
+            sus poderosas mandíbulas.
+        </p>
+        <p>En resumen, los hipopótamos son animales fascinantes que viven en hábitats acuáticos de África. 
+            Son grandes herbívoros, sociales y territoriales. Su tamaño y comportamiento agresivo les permiten 
+            defenderse de la mayoría de los depredadores. Sin embargo, a pesar de su apariencia tranquila, los hipopótamos 
+            deben ser tratados con respeto y precaución debido a su fuerza y temperamento.
+        </p>
+    </article>
+    <footer class="footer">
+        <p>derechos reservados &copy; 2023</p>
+    </footer>
+</body>
+
+</html>
